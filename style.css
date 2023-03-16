@@ -10,7 +10,7 @@ body {
 
 h1, h2, h3 {
   font-family: Chivo;
-	color: #C52367;
+  color: #C52367;
 }
 
 a {
@@ -32,7 +32,7 @@ p {
 
 .banner {
 /*	*/
-	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -52,14 +52,14 @@ p {
 
 .container {
 /*	*/
-	width: 900px;
+  width: 800px;
   margin: 30px auto;
 }
 
 .cards-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid.gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
 
 .button-blue {
@@ -76,6 +76,10 @@ p {
   background-color: #0D1EC6;
   color: white;
   transform: scale(0.98);
+}
+
+.category-title {
+  text-align: center;
 }
 
 .card-white {
@@ -109,4 +113,40 @@ p {
   color: white;
 }
 
+/* Cards media queries */
+@media (max-width: 800px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* .category-title {
+    text-align: center;
+  } */
+
+  .card-white {
+    width: auto;
+  }
+}
+
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    /* width: 600px; */
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+
 /*Animations*/
+
